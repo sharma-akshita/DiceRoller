@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/main.js" defer></script>
+    <title>Dice Roller</title>
+</head>
+<body>
+<header>
+    <h1>Dice Roller</h1>
+</header>
+<main>
+    <h2>Roll the Dice</h2>
+    <p id="dice_row"></p>
+    <p id="total_row">
+        <span class="total_label">Total:</span>
+        <span class="total_number">0</span>
+    </p>
+    <p>
+        <label for="c">Number of Dice:</label>
+        <select id="c">
+            <option>1</option>
+            <option>2</option>
+            <option selected>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </p>
+    <p>
+        <button onclick="onRollDice()">Roll Dice</button>
+    </p>
+    <p>
+        <a href="#" onclick="onReset()">Reset</a>
+    </p>
+</main>
+<footer>
+    Sheridan College&nbsp;&nbsp;<span class='hart'>&#9825;</span>&nbsp;&nbsp;<span>January 17, 2024</span>
+</footer>
+</body>
+</html>
